@@ -1,4 +1,55 @@
+<!-- Markup -->
+<div id="orb-container"> 
+    {#each zIndex as zIndex, i}
+        <div 
+            class={"orb " + i}
+            style=
+                "border: 1px solid {orbColor[i]};
+                width: {orbSize[i] + "vh"};
+                height: {orbSize[i] + "vh"};
+                opacity: {orbOpacity[i]};
+                z-index: {zIndex};">
+        </div>
+    {/each}
+
+    <button class="btn rounded-full btn-secondary btn-sm text-lg" disabled={button_Bool} id="scrollButton" on:click={OrbStepper}>◉_◉</button>
+</div>
+<!-- //Styling  -->
+<style>
+    #orb-container {
+        width: 100vw;
+        height: 100vh;
+        background: radial-gradient(circle at center, rgb(7, 0, 21), hsl(254, 89%, 10%) 20%, black 100%);
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .orb {
+        border-radius: 50%;
+        position: absolute;
+        transition-property: width, height, opacity;
+        transition-duration: .2s;
+    }
+
+    .orb:hover {
+        border-width: 2px !important;
+    }
+
+    button {
+        position: fixed;
+        margin: auto;
+        bottom: 40px;
+
+    }
+</style>
+<!-- Functions -->
 <script>
+// @ts-nocheck
+
     //Booleans
     let button_Bool = false;
     //Variables
@@ -13,19 +64,6 @@
     let orbOpacity = [0,1,1,1,1,1,1,0]
     let orbSize = [0,10,20,30,40,50,60,70]
     //Functions
-    function deBuffer() {
-        const buffInterval = setInterval(() => (buffer -= 200), 200);
-        if (buffer < 200) {
-            clearInterval(buffInterval);
-            buffer = 0;
-        }
-    }
-    function ButtonBuffer() {
-        console.log(buffer);
-        buffer += 200;
-        setTimeout(OrbStepper, buffer);
-        deBuffer();
-    }
     function OrbStepper() {
         //Decrement Step Counters
         _dec6_--;
@@ -60,57 +98,3 @@
         zIndex = zIndex;
     }
 </script>
-
-<!-- Markup -->
-<div id="orb-container"> 
-    {#each zIndex as zIndex, i}
-        <div 
-            class={"orb " + i}
-            style=
-                "border: 1px solid {orbColor[i]};
-                width: {orbSize[i] + "vh"};
-                height: {orbSize[i] + "vh"};
-                opacity: {orbOpacity[i]};
-                z-index: {zIndex};">
-        </div>
-    {/each}
-
-    <button disabled={button_Bool} id="scrollButton" on:click={ButtonBuffer}>◉_◉</button>
-</div>
-    
-<!-- //Styling  -->
-<style>
-    #orb-container {
-        width: 100vw;
-        height: 100vh;
-        background: radial-gradient(circle at center, rgb(5, 0, 15), hsl(260, 88%, 7%) 30%, black 100%);
-        position: fixed;
-        display: flex;
-        top: 0;
-        left: 0;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .orb {
-        border-radius: 50%;
-        position: absolute;
-        transition-property: width, height, opacity;
-        transition-duration: .2s;
-    }
-
-    .orb:hover {
-        border-width: 2px !important;
-    }
-
-    button {
-        position: fixed;
-        margin: auto;
-        bottom: 15px;
-        border-radius: 50%;
-        width: 50px;
-        height: 40px;
-        background:rgb(62, 62, 62);
-        color: rgb(186, 186, 186);
-    }
-</style>
