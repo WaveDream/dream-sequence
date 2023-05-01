@@ -11,10 +11,11 @@
                 z-index: {zIndex};">
         </div>
     {/each}
+    <div id="center-node" class="bg-purple-800 w-[25px] h-[25px] rounded-full"></div>
 
     <button class="btn rounded-full btn-secondary btn-sm text-lg" disabled={button_Bool} id="scrollButton" on:click={OrbStepper}>◉_◉</button>
 </div>
-<!-- //Styling  -->
+<!-- Styling  -->
 <style>
     #orb-container {
         width: 100vw;
@@ -46,7 +47,7 @@
 
     }
 </style>
-<!-- Functions -->
+<!-- Logic -->
 <script>
 // @ts-nocheck
 
