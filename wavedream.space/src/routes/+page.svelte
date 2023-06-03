@@ -1,4 +1,7 @@
 <!-- Markup -->
+
+
+
 <div id="orb-container">
 <div></div>
     <img class="max-w-[500px] logo" draggable="false" src="/WaveDream_Logo_Optimized.svg" alt="WaveDream.Space" />
@@ -25,11 +28,12 @@
                 </a>
             </div>
         </div>
-
-
 </div>
+
 <!-- Styling  -->
 <style lang="postcss">
+
+
 #orb-container {
     width: 100vw;
     height: 100vh;
