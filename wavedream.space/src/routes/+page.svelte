@@ -54,10 +54,11 @@
     user-select: none;
 }
 h1 {
-font-family: "Jura", sans-serif;
+font-family: "Ubuntu", sans-serif;
+font-weight: 300;
   background: linear-gradient(to left top, rgb(134, 239, 172), rgb(59, 130, 246), rgb(250, 51, 234));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
+
 </style>

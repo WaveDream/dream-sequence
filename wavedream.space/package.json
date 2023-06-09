@@ -32,6 +32,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/jura": "^4.5.13",
+		"@fontsource/ubuntu": "^5.0.2",
 		"daisyui": "^2.51.6",
 		"svelvet": "^7.0.34"
 	}
