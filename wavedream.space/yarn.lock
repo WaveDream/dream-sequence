@@ -12,6 +12,11 @@
   resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.17.19.tgz"
   integrity sha512-lAhycmKnVOuRYNtRtatQR1LPQf2oYCkRGkSFnseDAKPl8lu5SOsK/e1sXe5a0Pc5kHIHe6P2I/ilntNv2xf3cA==
 
+"@fontsource-variable/orbitron@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.npmjs.org/@fontsource-variable/orbitron/-/orbitron-5.0.2.tgz"
+  integrity sha512-NZXotlOa8Xl3v+6Kk+yqU6LH2jKmR5xWHJ1hd2/6NRmnK8Lhp7zR5AoBWOq/Lq8LmuAu59bl9uieQk70z+BRNw==
+
 "@fontsource/fira-mono@^4.5.10":
   version "4.5.10"
   resolved "https://registry.npmjs.org/@fontsource/fira-mono/-/fira-mono-4.5.10.tgz"

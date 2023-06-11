@@ -31,6 +31,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource-variable/orbitron": "^5.0.2",
 		"@fontsource/jura": "^4.5.13",
 		"@fontsource/ubuntu": "^5.0.2",
 		"daisyui": "^2.51.6",

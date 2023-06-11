@@ -1,6 +1,6 @@
 <script>
   import "../app.css";
-  import "@fontsource/ubuntu/300.css"
+  import "@fontsource-variable/orbitron"
 
 </script>
 
