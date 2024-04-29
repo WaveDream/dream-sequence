@@ -5,7 +5,7 @@
 <div id="orb-container">
 <div></div>
     <img class="max-w-[500px] logo" draggable="false" src="/WaveDream_Logo_Optimized.svg" alt="WaveDream.Space" />
-    <h1 class="tracking-widest mb-[10px] text-[55px]">wavedream.space</h1>
+    <h1 class="tracking-widest mb-[10px] text-[55px]">dreamSequence</h1>
 
         <div id="button-div" class="w-screen flex justify-center">
             <div id="buttons" class="flex items-center justify-evenly">
